@@ -1,12 +1,19 @@
 Week 2 – HTML Forms (GET and POST)
+This week I made two HTML forms — one using GET and one using POST — and tested them with httpbin.org to see the difference between how they send data. I also styled them using Milligram CSS.
 
-This assignment was about creating two HTML forms, one using the GET method and one using the POST method, and then sending them to httpbin.org to see how the data is transmitted. We also used the browser’s DevTools to inspect the requests and see the differences between the two methods.
+What I did
+Made form-get.html that sends form data using GET. The data shows up in the URL and in the args section on httpbin.
 
-The file form-get.html contains a form that uses the GET method. When it is submitted, the form data is added to the end of the URL as query parameters. This means the values are visible in the browser address bar and can be shared or bookmarked.
+Made form-post.html that sends form data using POST. The data is sent in the request body and shows in the form section on httpbin.
 
-The file form-post.html contains a form that uses the POST method. When it is submitted, the form data is sent in the body of the request rather than in the URL. This makes the URL look cleaner and is better for sending larger amounts of data or sensitive information.
+Added Milligram, Normalize.css, and Google Fonts to make the forms look better.
 
-From the httpbin.org results, I saw that for GET requests, all the form data appeared in the "args" section of the response and was also visible in the URL. For POST requests, the form data appeared in the "form" section of the response and was not shown in the URL.
+Used Chrome DevTools to check what was being sent and took screenshots to compare the two methods.
 
-I used Visual Studio Code to create the HTML files, httpbin.org to test the requests, and the browser’s DevTools to check the request and response details.
+Difference between GET and POST
+GET: puts the data in the URL, so it’s visible in the address bar and can be bookmarked or shared.
+
+POST: sends the data in the background, so it’s not shown in the address bar.
+
+On httpbin, GET data is under "args", POST data is under "form".
 
